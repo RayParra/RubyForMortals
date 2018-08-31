@@ -6,14 +6,13 @@ h = {"nombre"=> "Naruto", "rango"=> "Hokage", "jutsu"=> "Kage Bushin no Jutsu"}
 puts h
 
 puts h["nombre"]
-
 puts h["jutsu"]
 
-h["naturaleza"] = "Viento"
 h["aldea"] = "Konoha"
+h["nombre"] = "Naruto Huzumaki"
 
-puts h
+puts "Hash: #{h}"
 
-h.each do |clave, valor|
-	puts "#{clave}=> #{valor}"
+h.each do |key, value|
+	puts "Key: #{key} --- Value: #{value}"
 end
